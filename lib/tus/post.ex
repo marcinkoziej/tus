@@ -37,7 +37,7 @@ defmodule Tus.Post do
       if metadata_src do
         parse_metadata(metadata_src)
       else
-        nil
+        %{}
       end
 
     file = %Tus.File{
